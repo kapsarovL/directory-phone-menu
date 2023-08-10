@@ -1,0 +1,123 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;700&display=swap');
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+ 
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2em;
+  border: 1px solid var(--surface-1);
+  background: var(--gradient-2);
+  border-radius: var(--radius-3);
+  box-shadow: var(--shadow-3);
+}
+
+.app__title {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-8);
+  color: white; 
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000000ff;
+  line-height: var(--font-lineheight-2);
+}
+
+.form-container {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 2em;
+
+}
+
+.form-container input {
+  background-color: #ffffff;
+  border: none;
+  font-weight: var(--font-weight-4);
+  padding: 0.5em;
+  border-radius: var(--radius-2);
+  box-shadow: var(--shadow-2)
+}
+
+.form-container button {
+  display: inline-flex;
+  white-space: nowrap;
+  background: var(--gradient-8);
+  color: white;
+  border: none;
+  padding: 1em 5em;
+  border-radius: var(--radius-2);
+  font-size: var(--font-size-1);
+  font-weight: var(--font-weight-6);
+  box-shadow: var(--shadow-2);
+  text-shadow: 1px 1px 1px #000000ff;
+  cursor: pointer;
+}
+
+.form-container button:hover,
+.form-container button:focus{
+  color: var(--teal-0);
+  background: var(--gradient-21);
+
+}
+
+.form-container button:active {
+  box-shadow: var(--shadow-2);
+  transform: translateY(4px);
+}
+
+.directory-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-4);
+}
+
+.directory-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  border-radius: var(--radius-2);
+  background-color: #FFFFFF;
+  text-align: center;
+  box-shadow: var(--shadow-2);
+  
+}
+
+.directory-item button {
+  background-color: var(--red-8);
+  color: #FFFFFF;
+  border: none;
+  padding: 0.5em 2em;
+  border-radius: var(--radius-2);
+  text-shadow: 1px 1px 1px #000000ff;
+  box-shadow: var(--shadow-2);
+  cursor: pointer;
+}
+
+.directory-item button:active {
+  box-shadow: var(--shadow-2);
+  transform: translateY(4px);
+}
